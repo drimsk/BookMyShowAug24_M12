@@ -12,9 +12,12 @@ import java.util.List;
 @Setter
 @Entity
 public class Theatre extends BaseModel{
+
     private String name;
+
     @OneToMany
     private List<Screen> screens;
+
     @ManyToOne
     private Region region;
 }
